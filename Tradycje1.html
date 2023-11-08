@@ -103,13 +103,53 @@ position: relative;
 
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-width:600px; {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 15px;}
-  .sdenav a1{{font-size: 15px;}
-  .sidenav a2 {font-size: 15px;}
-  .sidenav {width :0%;}
+@media only screen and (max-width: 880px){
+      .Title {
+        font-size: 3.5vw;
+      }
 
+    }
+    @media only screen and (max-height: 640px){
+      .Title {
+        font-size: 4.5vh;
+      }
+
+    }
+
+
+    @media only screen and (max-width: 800px){
+      [class*="col-"]{
+        width: 100%;
+      }
+      .sidenav {
+        height: auto;
+        margin: 10vh 0 3vh 0;
+        position: static;
+      }
+      .main{
+        margin-top: 0;
+        width: 100%;
+      }
+      .footer{
+        height: auto;
+        padding-bottom: 40px;
+      }
+      .chart{
+        width: 93%;
+        max-width: 1000px;
+        aspect-ratio: 4 / 3;
+      }
+      
+    }
+
+    @media only screen and (min-height: 1200px){
+      .main{
+        font-size: 135%;
+      }
+      .sidenav a, .dropdown-btn {
+        font-size: 143%;
+      }
+    }
 /* Page content */
 .content {
   padding: 16px;
